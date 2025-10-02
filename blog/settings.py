@@ -9,7 +9,13 @@ SECRET_KEY = "django-insecure-your-secret-key-7398"  # replace with your own sec
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['Blog.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'blog-h9s2.onrender.com',
+    'www.blog-h9s2.onrender.com', 
+    'localhost',
+    '127.0.0.1',
+]
+
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static']
