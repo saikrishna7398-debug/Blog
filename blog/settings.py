@@ -9,7 +9,8 @@ SECRET_KEY = "django-insecure-your-secret-key"  # replace with your own secret
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['saikrishna.up.railway.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Application definition
 INSTALLED_APPS = [
@@ -28,6 +29,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

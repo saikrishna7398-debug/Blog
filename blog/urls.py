@@ -6,7 +6,7 @@ from django.urls import path, include
 from users import views as v
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin@7398/', admin.site.urls),
     path('register/', v.register, name='register'),
     path('profile/', v.profile, name='profile'),
     path('login/', a.LoginView.as_view(template_name='users/login.html'), name='login'),
